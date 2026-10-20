@@ -92,7 +92,7 @@ def generate_answer(question: str, context: str, api_key: str, model: str) -> st
     return (response.choices[0].message.content or "").strip()
 
 
-st.title("✈️ HR Policy Q&A Bot")
+st.title("✈️ Enterprise HR Policy Q&A Assistant — Hybrid RAG Demo")
 st.caption("Hybrid RAG demo: MiniLM embeddings + FAISS dense retrieval + BM25 lexical retrieval + grounded LLM generation")
 
 with st.sidebar:
